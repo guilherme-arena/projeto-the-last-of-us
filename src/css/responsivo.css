@@ -1,0 +1,56 @@
+/* Telas para menor que 1280 ele vai aplicar uma regra para alinhar */
+@media (max-width: 1280px){
+    body {
+        padding: 0 40px;
+    }
+}
+
+    /* Serve para quando a tela diminuir para 768px o texto alinhar na tela */
+@media(max-width: 768px){
+    .informacoes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Alinhar o texto, text-align: center; alinha o texto no centro e não no canto */
+    .informacoes .descricao{
+        width: 60%;
+        text-align: center;
+    }
+}
+
+/* Alinha o site para celular, tela de celular a partir de 425px */
+@media (max-width: 425px){
+    .informacoes .logo{
+        max-width: 300px;
+    }
+
+    .informacoes .descricao{
+        width: 100%;
+    }
+
+    /* Esse elemento serve para o menu lateral descer pra baixo no celular */
+    .menu-lateral{
+        position: static;
+        min-height: auto;
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    /* Esse elemento serve para alinhar os icones para ficar um do lado do outro e não em baixo "row é linha"  */
+    .menu-lateral ul{
+        flex-direction: row;
+    }
+
+    
+    .conteudo{
+        min-height: 70vh;
+        gap: 50px;
+    }
+
+    /* Espaçamento da parte de cima do texto, para não ficar colado */
+    body{
+        padding: 40px;
+    }
+}
